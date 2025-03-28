@@ -1,0 +1,74 @@
+\documentclass[
+	12pt,				
+	openright,			
+	oneside,			
+	a4paper,			
+	chapter=TITLE,		
+	section=TITLE,		
+	sumario=abnt-6027-2012,
+	english,			
+	brazil,				
+	fleqn,				
+	]{abntex2}
+
+\input{PacotesBasicos}	
+
+\titulo{Lista de exercícios}%
+
+\autor{Bruna Fragoso de Freitas Moreira \\ Vinicius Aarao Caldas da Costa{}}%
+
+\instituicao{Universidade Estadual do Maranhão, Centro de Ciência 
+ e Tecnologia, Engenharia da Computação}%
+
+\tipotrabalho{Lista de exercícios}
+
+\preambulo{Lista de exercícios apresentda para a disciplina
+de Cálculo Numérico Avançado no Centro de Ciência e Tecnologia,
+curso de engenharia da computação.}
+
+\local{São Luís, MA}%
+
+\data{\the\year}%
+
+\makeindex
+
+\begin{document}
+
+\selectlanguage{brazil}
+\frenchspacing  
+
+\pretextual
+
+\include{PreTextuais/Capa}					
+\include{PreTextuais/FolhadeRosto}			
+
+\include{PreTextuais/Sumario}				
+
+\textual
+
+\pagestyle{PagNumReduzida}						
+\aliaspagestyle{chapter}{PagNumReduzida}		
+
+\include{Textuais/Capitulo01}
+
+\postextual
+
+\bibliographystyle{abntex2-alf_revNBR2023.bst}	
+
+\bibliography{abntex2-ref_UDESC_2024}	
+\bibitem{geeks}
+GEEKSFORGEEKS. \textbf{Reverse Cuthill Mckee Algorithm}. Disponível em: \\
+\url{https://www.geeksforgegeeks.org/reverse-cuthill-mckee-algorithm/}. \\
+Acesso em: 10 out. 2023. 
+
+\bibitem{ufrgs}
+UFRGS. \textbf{Caminhos Eulerianos}. Disponível em: \\
+\url{https://www.ufrgs.br/espmat/disciplinas/novos_conteudos/2009/modulo_I/conteudos1c.htm}. \\
+Acesso em: 10 out. 2023. 
+
+\include{PosTextuais/Glossario}				
+\include{PosTextuais/Apendices}				
+\include{PosTextuais/Anexos}				
+\include{PosTextuais/IndiceRemissivo}		
+
+\end{document}
